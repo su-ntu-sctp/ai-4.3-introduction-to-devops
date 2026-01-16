@@ -1,52 +1,102 @@
-# Lesson Title
-Instructions: Replace the placeholders below and delete instruction lines before publishing.
+# Lesson: Introduction to DevOps
+
+## Preparation
+
+This lesson is **100% conceptual learning**. Be prepared to lead learners into activities to continuously engage them for learning.
+
+---
 
 ## Lesson Overview
-- **Briefing:** [1–2 sentences on what this lesson is about and why it matters]
-- **Module.Lesson:** [e.g., 3.2]
-- **Duration:** [e.g., 60–90 min]
-- **Prerequisites:** [short list]
+
+In this lesson, learners will learn about what DevOps is and this learning will follow them throughout the module. After the next two lessons, all other lessons are very hands on and is lesser on conceptual learning.
+
+---
 
 ## Lesson Objectives
-Write 2–4 measurable outcomes using action verbs (Apply, Build, Integrate).
-- [objective 1]
-- [objective 2]
-- [objective 3]
 
-## Topics & Activities
-Duplicate the block below for each topic. Keep it concise.
+By the end of this lesson, learners will be able to:
 
-### Topic 1 — [topic name]
-**Sections**
-- [section 1]
-- [section 2]
-- [section 3]
+1. Explain what DevOps is and why it is important in modern software delivery (Dev, Ops, culture, automation)  
+2. Differentiate between Agile and DevOps, and explain how they complement each other in the software lifecycle  
+3. Describe the principles and phases of the DevOps lifecycle (from planning to monitoring)  
+4. Identify common DevOps tools used for version control, containerization, CI/CD, vulnerability scanning, and hosting  
 
-#### Hands-on / Lab (Activity)
-- [brief activity task or link to starter code]
+---
 
-### Topic 2 — [topic name]
-**Sections**
-- [section 1]
-- [section 2]
+## Part 1 - What is DevOps?
 
-#### Hands-on / Lab (Activity)
-- [brief activity task or link to starter code]
+### Definition
 
-### Topic 3 — [topic name]
-**Sections**
-- [section 1]
-- [section 2]
+> DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market. 
 
-#### Hands-on / Lab (Activity)
-- [brief activity task or link to starter code]
+**Plain-English clarification for beginners:** DevOps is about helping teams **deliver software faster and more reliably** by improving collaboration between developers and operations, and by **automating repeatable steps** like building, testing, and deploying.
 
-## Summary
-State 2–3 key takeaways.
-- [takeaway 1]
-- [takeaway 2]
+<img src="./assets/images/image.png" width="50%" height="50%"/>
 
-## (Optional) Resources
-2–4 high-quality links (docs, guides, videos).
-- [link 1]
-- [link 2]
+### Is DevOps same as Agile?
+
+DevOps and agile practices are complementary approaches in the software delivery lifecycle. They both bring efficiency and predictability to the lifecycle.
+
+Agile is iterative and focuses on collaboration, rapid software releases and stakeholder feedback. It is a mindset and a cultural philosophy that aims to have everyone work towards continuous improvement and delivering value to customers.
+
+DevOps, on the other hand, is a delivery approach that removes the silos between the development and operations teams by using tools to automate processes.
+
+### Principles behind DevOps
+
+1. Maintain version control on all production artifacts. - Artifacts must be placed in a centralized version control system that is part of the CI/CD pipelines.
+2. Implement CI/CD. - Teams deliver software updates and patches continuously, rather than on a calendar-driven deadline.
+3. Automate acceptance testing of specifications of the system. - Teams should write and automate testing for the functionalities of the application
+4. Enforce peer review processes. - Teams must review production changes collaboratively via a documented and systematic approach.
+5. Create a culture of high trust. - No one should be afraid to ask hard questions, get into debates and take accountability. It gives teams the freedom to experiment with new tools and processes that can improve product delivery without fear of failure
+6. Instate proactive monitoring practices - Create tailored reporting and alerts based on the configuration of the monitoring tools.
+7. Foster win-win relationships across the organization. - Everybody is on one team, as neither development nor IT operations can succeed on its own.
+
+### DevOps phases
+
+1. **Planning** - The stage where development and IT operations teams -- along with other stakeholders -- determine the features desired, accompanied by an iteration value and criteria for each project phase.
+2. **Code and build** - In the coding phase, developers perform their assigned coding work. When they complete their tasks, they check their work into a centralized source code repository which serve as the single source of truth for code. The build phase entails software code retrieval from the centralized repository and compiles the software code into a binary artifact, executes functional tests and publishes the artifact into a shared centralized repository.
+3. **Testing** - Automation enables developers to achieve continuous testing to test multiple codebases in parallel. An automated testing strategy also ensures there are no flaws in an application's functionality.
+4. **Continuous Integration** - The heart of the entire DevOps life cycle. It is a software development practice in which the developers require to commit changes to the source code more frequently.
+5. **Continuous Deployment** - This is the stage where the code is deployed to the production servers. It is also important to ensure that the code is correctly deployed on all the servers.
+6. **Continuous Monitoring** - This is the stage where vital information about the use of the software is recorded. This information is processed to recognize the proper functionality of the application. The system errors such as low memory, server not reachable, etc are resolved in this phase.
+
+DevOps involves the organizational culture, practices and the relevant technological tools to achieve high application delivery velocity. The core of DevOps is the automation of Continuous Integration and Continuous Deployment.
+
+### Benefits
+
+DevOps brings a variety of benefits for a team to be able to deliver 
+
+- Speed - DevOps enables teams to move with high velocity by automating integration and deployment
+- Rapid Delivery - DevOps can increase the frequency and pace of releases
+- Reliability - Ensure the quality of application updates and infrastructure changes by testing each change to be functional and safe
+- Scale - DevOps can help manage complex or changing systems efficiently and with reduced risk through automation and consistency
+- Improved Collaboration - Development and operations teams collaborate closely, share many responsibilities, and combine their workflows. This reduces inefficiencies and saves time
+- Security - DevOps can retain control and preserve compliance through automated compliance policies and fine-grained controls
+
+---
+
+## Part 2 - Technological Tools
+
+> This section helps learner to expose to technological tools that may not be used within this module.
+
+DevOps requires the use of multiple technological tools to make automation possible. Each software has its unique requirements and release strategies. Therefore, DevOps needs to garner the different technological tools to make automation possible.
+
+<img src="https://shalb.com/wp-content/uploads/2019/11/Devops1-2048x1338.jpeg" width="50%"/>
+
+For this module, we will be using the following tools:
+
+1. Git and Github - Version Control System
+2. Docker - Containerization
+3. CircleCI - DevOps Pipeline
+4. Snyk - Vulnerability Scan
+5. Heroku - Hosting Platform
+
+There are other tools such as Jenkins, Kubernetes, Splunk, and Prometheus as well as hosting platforms such as AWS and Google Cloud Platform. DevOps is an infinite loop of continuous feedback and improvement through these tools.
+
+In summary, DevOps is the combination of **cultural philosophies, practices, and tools** that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
+
+### Docker installation
+
+For the next lessons, we will be focusing on containerization and CI/CD. As mentioned above, we will be using Docker for containerization.
+
+Install Docker Desktop for Windows via this [link](https://docs.docker.com/desktop/install/windows-install/) or for Mac via this [link](https://docs.docker.com/desktop/install/mac-install/)
