@@ -1,10 +1,5 @@
-# Lesson 1: Introduction to DevOps and GitHub for DevOps
+# Lesson : Introduction to DevOps and GitHub for DevOps
 
-## Preparation
-
-This lesson is primarily conceptual with guided practical demonstrations. Be prepared to continuously engage learners through discussions and short hands-on GitHub activities.
-
----
 
 ## Lesson Overview
 
