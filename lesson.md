@@ -1,14 +1,14 @@
-# Lesson: Introduction to DevOps
+# Lesson 1: Introduction to DevOps and GitHub for DevOps
 
 ## Preparation
 
-This lesson is **100% conceptual learning**. Be prepared to lead learners into activities to continuously engage them for learning.
+This lesson is primarily conceptual with guided practical demonstrations. Be prepared to continuously engage learners through discussions and short hands-on GitHub activities.
 
 ---
 
 ## Lesson Overview
 
-In this lesson, learners will learn about what DevOps is and this learning will follow them throughout the module. After the next two lessons, all other lessons are very hands on and is lesser on conceptual learning.
+This lesson introduces the core concepts of DevOps and explains how GitHub and branching strategies support DevOps practices in real-world software teams. Learners will first build a strong foundation in DevOps concepts, followed by an introduction to GitHub branching, pull requests, and essential Git commands that prepare them for CI/CD and deployment workflows in later lessons.
 
 ---
 
@@ -16,87 +16,171 @@ In this lesson, learners will learn about what DevOps is and this learning will 
 
 By the end of this lesson, learners will be able to:
 
-1. Explain what DevOps is and why it is important in modern software delivery (Dev, Ops, culture, automation)  
-2. Differentiate between Agile and DevOps, and explain how they complement each other in the software lifecycle  
-3. Describe the principles and phases of the DevOps lifecycle (from planning to monitoring)  
-4. Identify common DevOps tools used for version control, containerization, CI/CD, vulnerability scanning, and hosting  
+1. Explain what DevOps is and why it is critical in modern software delivery  
+2. Differentiate between Agile and DevOps practices  
+3. Describe the key principles and phases of the DevOps lifecycle  
+4. Apply basic GitHub branching and pull request workflows to support DevOps practices  
 
 ---
 
-## Part 1 - What is DevOps?
+## Lesson Timing Breakdown (3 hours)
+
+- Introduction and lesson overview – 10 minutes  
+- Part 1: DevOps foundations – 45 minutes  
+- DevOps principles and lifecycle – 45 minutes  
+- Benefits and DevOps tooling overview – 25 minutes  
+- Part 2: GitHub and branching for DevOps – 35 minutes  
+- GitHub Flow simulation (demo) – 15 minutes  
+- Advanced Git commands (overview) – 15 minutes  
+- Recap and Q&A – 10 minutes  
+
+---
+
+## Part 1 – What is DevOps?
 
 ### Definition
 
-> DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market. 
+> DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
 
-**Plain-English clarification for beginners:** DevOps is about helping teams **deliver software faster and more reliably** by improving collaboration between developers and operations, and by **automating repeatable steps** like building, testing, and deploying.
+**Plain-English explanation:** DevOps focuses on helping teams deliver software faster and more reliably by improving collaboration between development and operations teams and by automating repetitive tasks such as building, testing, and deploying applications.
 
 <img src="./assets/images/image.png" width="50%" height="50%"/>
 
-### Is DevOps same as Agile?
+---
 
-DevOps and agile practices are complementary approaches in the software delivery lifecycle. They both bring efficiency and predictability to the lifecycle.
+### Is DevOps the Same as Agile?
 
-Agile is iterative and focuses on collaboration, rapid software releases and stakeholder feedback. It is a mindset and a cultural philosophy that aims to have everyone work towards continuous improvement and delivering value to customers.
+DevOps and Agile practices are complementary approaches in the software delivery lifecycle. They both aim to improve efficiency, speed, and predictability.
 
-DevOps, on the other hand, is a delivery approach that removes the silos between the development and operations teams by using tools to automate processes.
+Agile focuses on iterative development, collaboration, frequent feedback, and delivering value to users in small increments.
 
-### Principles behind DevOps
-
-1. Maintain version control on all production artifacts. - Artifacts must be placed in a centralized version control system that is part of the CI/CD pipelines.
-2. Implement CI/CD. - Teams deliver software updates and patches continuously, rather than on a calendar-driven deadline.
-3. Automate acceptance testing of specifications of the system. - Teams should write and automate testing for the functionalities of the application
-4. Enforce peer review processes. - Teams must review production changes collaboratively via a documented and systematic approach.
-5. Create a culture of high trust. - No one should be afraid to ask hard questions, get into debates and take accountability. It gives teams the freedom to experiment with new tools and processes that can improve product delivery without fear of failure
-6. Instate proactive monitoring practices - Create tailored reporting and alerts based on the configuration of the monitoring tools.
-7. Foster win-win relationships across the organization. - Everybody is on one team, as neither development nor IT operations can succeed on its own.
-
-### DevOps phases
-
-1. **Planning** - The stage where development and IT operations teams -- along with other stakeholders -- determine the features desired, accompanied by an iteration value and criteria for each project phase.
-2. **Code and build** - In the coding phase, developers perform their assigned coding work. When they complete their tasks, they check their work into a centralized source code repository which serve as the single source of truth for code. The build phase entails software code retrieval from the centralized repository and compiles the software code into a binary artifact, executes functional tests and publishes the artifact into a shared centralized repository.
-3. **Testing** - Automation enables developers to achieve continuous testing to test multiple codebases in parallel. An automated testing strategy also ensures there are no flaws in an application's functionality.
-4. **Continuous Integration** - The heart of the entire DevOps life cycle. It is a software development practice in which the developers require to commit changes to the source code more frequently.
-5. **Continuous Deployment** - This is the stage where the code is deployed to the production servers. It is also important to ensure that the code is correctly deployed on all the servers.
-6. **Continuous Monitoring** - This is the stage where vital information about the use of the software is recorded. This information is processed to recognize the proper functionality of the application. The system errors such as low memory, server not reachable, etc are resolved in this phase.
-
-DevOps involves the organizational culture, practices and the relevant technological tools to achieve high application delivery velocity. The core of DevOps is the automation of Continuous Integration and Continuous Deployment.
-
-### Benefits
-
-DevOps brings a variety of benefits for a team to be able to deliver 
-
-- Speed - DevOps enables teams to move with high velocity by automating integration and deployment
-- Rapid Delivery - DevOps can increase the frequency and pace of releases
-- Reliability - Ensure the quality of application updates and infrastructure changes by testing each change to be functional and safe
-- Scale - DevOps can help manage complex or changing systems efficiently and with reduced risk through automation and consistency
-- Improved Collaboration - Development and operations teams collaborate closely, share many responsibilities, and combine their workflows. This reduces inefficiencies and saves time
-- Security - DevOps can retain control and preserve compliance through automated compliance policies and fine-grained controls
+DevOps focuses on how software is built, tested, deployed, and operated after development. It removes silos between development and operations teams through automation, tooling, and shared responsibility.
 
 ---
 
-## Part 2 - Technological Tools
+### Principles Behind DevOps
 
-> This section helps learner to expose to technological tools that may not be used within this module.
+1. Maintain version control on all production artifacts – artifacts must be stored in a centralized version control system that integrates with CI/CD pipelines.  
+2. Implement CI/CD – teams deliver software continuously rather than on fixed release schedules.  
+3. Automate acceptance testing – testing ensures application functionality and stability.  
+4. Enforce peer review processes – changes are reviewed collaboratively to improve quality.  
+5. Create a culture of high trust – teams are encouraged to experiment, collaborate, and take ownership.  
+6. Instate proactive monitoring practices – systems are monitored to detect and resolve issues early.  
+7. Foster win-win relationships across the organization – development and operations succeed together.
 
-DevOps requires the use of multiple technological tools to make automation possible. Each software has its unique requirements and release strategies. Therefore, DevOps needs to garner the different technological tools to make automation possible.
+---
 
-<img src="https://shalb.com/wp-content/uploads/2019/11/Devops1-2048x1338.jpeg" width="50%"/>
+### DevOps Lifecycle Phases
 
-For this module, we will be using the following tools:
+1. **Planning** – stakeholders define features, priorities, and success criteria.  
+2. **Code and Build** – code is written, committed, built, tested, and packaged.  
+3. **Testing** – automated testing validates application functionality.  
+4. **Continuous Integration** – frequent integration of code changes with automated checks.  
+5. **Continuous Deployment** – automated deployment to production or staging environments.  
+6. **Continuous Monitoring** – system health and application performance are continuously observed.
 
-1. Git and Github - Version Control System
-2. Docker - Containerization
-3. CircleCI - DevOps Pipeline
-4. Snyk - Vulnerability Scan
-5. Heroku - Hosting Platform
+DevOps combines organizational culture, engineering practices, and tools to achieve high application delivery velocity, with CI/CD automation at its core.
 
-There are other tools such as Jenkins, Kubernetes, Splunk, and Prometheus as well as hosting platforms such as AWS and Google Cloud Platform. DevOps is an infinite loop of continuous feedback and improvement through these tools.
+---
 
-In summary, DevOps is the combination of **cultural philosophies, practices, and tools** that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
+### Benefits of DevOps
 
-### Docker installation
+DevOps provides significant advantages for modern software teams:
 
-For the next lessons, we will be focusing on containerization and CI/CD. As mentioned above, we will be using Docker for containerization.
+- **Speed** – automation enables faster delivery of features and fixes.  
+- **Rapid Delivery** – shorter and more frequent release cycles.  
+- **Reliability** – automated testing and deployment reduce errors.  
+- **Scale** – automation helps manage complex systems consistently.  
+- **Improved Collaboration** – shared responsibility improves teamwork.  
+- **Security** – security checks can be integrated directly into pipelines.
 
-Install Docker Desktop for Windows via this [link](https://docs.docker.com/desktop/install/windows-install/) or for Mac via this [link](https://docs.docker.com/desktop/install/mac-install/)
+---
+
+## Part 2 – GitHub and Branching for DevOps
+
+### Why GitHub Matters in DevOps
+
+GitHub plays a central role in DevOps by acting as the single source of truth for code. It enables collaboration, peer review, automation, and CI/CD integration.
+
+Branching allows developers to work independently without affecting the main codebase, while pull requests enable review, discussion, and automated checks before code is merged.
+
+---
+
+### What Is a Branching Strategy?
+
+A branching strategy defines how teams create, merge, and manage branches in a version control system. It helps teams collaborate safely, develop features in parallel, and release software confidently.
+
+Branches protect the main codebase and allow teams to isolate changes until they are ready to be merged.
+
+<img src="./assets/images/git-branch.png" width="50%"/>
+
+---
+
+### GitHub Flow (Recommended for This Module)
+
+GitHub Flow is a simple and effective branching strategy commonly used in DevOps and CI/CD environments.
+
+Key ideas:
+- The `main` branch is always deployable  
+- New work is done in short-lived feature branches  
+- Changes are merged back into `main` using pull requests  
+
+Steps:
+1. Create a feature branch from `main`  
+2. Make and commit changes  
+3. Push the branch to GitHub  
+4. Open a pull request  
+5. Review and merge into `main`  
+6. Delete the feature branch  
+
+This approach works well with automated CI/CD pipelines.
+
+---
+
+## Simulating a GitHub Flow
+
+Step 1: Create a new feature branch  
+```bash
+git branch feature-yourname-test
+git checkout feature-yourname-test
+```
+
+Step 2: Clone the repository  
+```bash
+git clone <repository-url>
+```
+
+Step 3: Make changes and commit  
+```bash
+git add .
+git commit -m "Add feature changes"
+git push origin feature-yourname-test
+```
+
+Step 4: Create a pull request on GitHub and merge it into `main`.
+
+---
+
+## Advanced Git Commands (DevOps Context)
+
+### Inspecting and Comparing
+- `git log` – view commit history  
+- `git diff` – compare changes  
+
+### Working with Remote Repositories
+- `git fetch` – download changes without merging  
+- `git pull` – fetch and merge changes  
+
+**Key difference:** `git fetch` is safer for reviewing changes before merging.
+
+### Working with Branches
+- `git branch` – list or create branches  
+- `git checkout` – switch branches  
+- `git merge` – merge changes  
+- `git stash` – temporarily save work  
+
+---
+
+## Recap
+
+In this lesson, learners were introduced to DevOps concepts and explored how GitHub and branching strategies support DevOps practices. This foundation prepares learners for upcoming lessons on CI/CD, containerization, and deployment.
