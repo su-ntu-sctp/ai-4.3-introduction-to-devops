@@ -1,69 +1,89 @@
 # Assessment / Quiz
 
-## Overview
-- **Lesson:** [title / module.lesson]
-- **Format:** 10 questions (mix MCQ / True–False / Short Answer)
-- **Time:** ~10–15 minutes
-- **Scoring:** 1 point each (unless stated)
+### Q1 (True/False)
 
-## Questions
+Q1: DevOps focuses on improving collaboration between development and operations teams through automation and shared responsibility?
 
-### Q1 (MCQ)
-[Question?]  
-A. [ ]  
-B. [ ]  
-C. [ ]  
-D. [ ]  
-**Answer:** [A/B/C/D] — [1-line reason]
+A - True
 
-### Q2 (MCQ)
-[Question?]  
-A. [ ]  
-B. [ ]  
-C. [ ]  
-D. [ ]  
-**Answer:** [A/B/C/D] — [1-line reason]
+B - False
 
-### Q3 (True/False)
-[Statement]  
-**Answer:** [True/False] — [1-line reason]
+---
 
-### Q4 (True/False)
-[Statement]  
-**Answer:** [True/False] — [1-line reason]
+Q2: What is the main difference between Agile and DevOps?
 
-### Q5 (Short Answer)
-[Prompt]  
-**Expected:** [1–2 key points]
+A - Agile focuses on development iterations, DevOps focuses on deployment and operations
 
-### Q6 (Short Answer)
-[Prompt]  
-**Expected:** [1–2 key points]
+B - Agile is for developers, DevOps is for operations
 
-### Q7 (MCQ)
-[Question?]  
-A. [ ]  
-B. [ ]  
-C. [ ]  
-D. [ ]  
-**Answer:** [A/B/C/D] — [1-line reason]
+C - They are the same thing
 
-### Q8 (MCQ)
-[Question?]  
-A. [ ]  
-B. [ ]  
-C. [ ]  
-D. [ ]  
-**Answer:** [A/B/C/D] — [1-line reason]
+D - Agile is outdated, DevOps replaced it
 
-### Q9 (True/False)
-[Statement]  
-**Answer:** [True/False] — [1-line reason]
+---
 
-### Q10 (Short Answer)
-[Prompt]  
-**Expected:** [1–2 key points]
+Q3: In DevOps, CI/CD stands for Continuous Integration and Continuous Deployment?
 
-## Notes
-- Keep each question atomic and aligned to the lesson objectives.
-- Put the answer immediately after each question.
+A - True
+
+B - False
+
+---
+
+Q4: Which of the following is NOT a benefit of DevOps?
+
+A - Faster delivery of features
+
+B - Improved collaboration
+
+C - Elimination of all bugs
+
+D - Automated testing and deployment
+
+---
+
+Q5: In GitHub Flow, which branch should always remain deployable?
+
+A - develop
+
+B - main
+
+C - feature
+
+D - staging
+
+---
+
+Q6: A branching strategy defines how teams create, merge, and manage branches in version control?
+
+A - True
+
+B - False
+
+---
+
+Q7: What is the purpose of a pull request in GitHub?
+
+A - To download code from the repository
+
+B - To enable code review and discussion before merging changes
+
+C - To delete a branch
+
+D - To create a new repository
+
+---
+
+Q8: Which Git command downloads changes from a remote repository without merging them?
+
+A - git pull
+
+B - git push
+
+C - git fetch
+
+D - git clone
+
+---
+
+Q9: Feature branches in GitHub Flow should be short-lived and merged
