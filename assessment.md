@@ -87,3 +87,19 @@ D - git clone
 ---
 
 Q9: Feature branches in GitHub Flow should be short-lived and merged
+
+A - True
+
+B - False
+
+---
+
+Q10: Which of the following best describes Continuous Integration (CI)?
+
+A - Manually deploying code to production
+
+B - Automatically building and testing code every time changes are pushed
+
+C - Writing code without version control
+
+D - Deploying only once at the end of a project
